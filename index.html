@@ -434,11 +434,45 @@
             </div>
           </section>
           <div
-            style="text-align: center"
-            class="w-full py-3 px-4 rounded-md font-medium text-white transition-colors duration-200 bg-blue-600 hover:bg-blue-700"
+            style="
+              text-align: center;
+              width: 100%;
+              padding: 0.75rem 1rem;
+              border-radius: 0.375rem;
+              font-weight: 500;
+              color: white;
+              background-color: #2563eb;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              animation: pulse 1.5s infinite;
+            "
+            onmouseover="this.style.backgroundColor='#1d4ed8'; this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#2563eb'; this.style.transform='scale(1)'"
           >
-            <a href="/reciept.html"> TRANZAKCIÓ ELŐZMÉNYEI </a>
+            <a
+              href="/reciept.html"
+              style="
+                text-decoration: none;
+                color: inherit;
+                display: inline-block;
+              "
+            >
+              TRANZAKCIÓ ELŐZMÉNYEI
+            </a>
           </div>
+
+          <style>
+            @keyframes pulse {
+              0%,
+              100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); /* bright red */
+              }
+              50% {
+                box-shadow: 0 0 0 25px rgba(239, 68, 68, 0); /* fade out */
+              }
+            }
+          </style>
+
           <section id="contact" class="py-16 bg-slate-50">
             <div class="container mx-auto px-4">
               <div class="max-w-4xl mx-auto">
